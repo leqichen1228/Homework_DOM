@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		p{
+			margin:25px;
+			font-size: 30px;
+			font-family: "Avenir";
+			text-align: center
+		}
+
+		div{
+			text-align: center;
+			display: inline-block;
+			line-height: 200px;
+			font-size: 20px;
+			font-family: "Avenir";
+
+		}
+
+		#box{
+			text-align: center;
+			width: 100%;
+		}
+
+		#sun{
+			text-align: center;
+			background-color:orange;
+			width:200px;
+			height: 200px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px orange,
+                0 0 60px red,
+                0 0 200px yellow,
+                inset 0 0 80px yellow;
+            margin-right:100px;
+
+		}
+
+		#moon{
+			text-align: center;
+			background-color:white;
+			width:200px;
+			height: 200px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px #ABB9FF,
+                0 0 60px #7088FF,
+                0 0 200px white,
+                inset 0 0 80px #ABB9FF;
+            margin-left:100px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<p>Hello there 😁</p>
+
+<div id="box">
+	<div id="sun" onclick="myFunction_1()">CLICK ME</div>
+	<div id="moon" onclick="myFunction_2()">CLICK ME</div>
+</div>
+
+
+<script>
+function myFunction_1() {
+  var para = document.createElement("P");
+  var t = document.createTextNode("Good Morning!");
+  para.appendChild(t);
+  document.body.appendChild(para);
+}
+
+function myFunction_2() {
+  var para = document.createElement("P");
+  var t = document.createTextNode("Good Night!");
+  para.appendChild(t);
+  document.body.appendChild(para);
+}
+</script>
+
+</body>
+</html>
